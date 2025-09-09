@@ -1,0 +1,4 @@
+Task	Start	End	Duration
+t2	0	2	2
+t3	2	4	2
+t2	4	5	1

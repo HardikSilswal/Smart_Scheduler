@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container-flex {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 1;
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #00f7ff55;
+  box-shadow: 0 0 20px rgba(0,255,255,0.1);
+  animation: slideInLeft 1s ease-out;
+}
+
+.left-panel h2 {
+  color: #14ffe9;
+  margin-bottom: 10px;
+}
+
+.left-panel ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.left-panel li {
+  margin: 10px 0;
+  border-bottom: 1px dashed #14ffe9;
+  padding: 5px;
+}
+
+/* Right Panel (Form) */
+.right-panel {
+  flex: 2;
+}
+
+.glass-box {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  padding: 25px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 30px rgba(0,255,255,0.3);
+}
+
+.title-type {
+  font-size: 2rem;
+  text-align: center;
+  color: #14ffe9;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px #14ffe9;
+}
+
+.task-card {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.task-card input {
+  padding: 10px;
+  flex: 1;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
+}
+
+.add-btn {
+  background: #14ffe9;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+  background: #00e6e6;
+}
+
+.algo-box {
+  margin-top: 20px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.submit-glow {
+  background: linear-gradient(to right, #00f7ff, #14ffe9);
+  padding: 12px 28px;
+  margin-top: 25px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  box-shadow: 0 0 12px #14ffe9;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-glow:hover {
+  box-shadow: 0 0 24px #00f7ff, 0 0 48px #14ffe9;
+  transform: scale(1.03);
+}
+
+/* Animation */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-200px); }
+  to { opacity: 1; transform: translateX(0); }
+}
